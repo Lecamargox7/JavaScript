@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        document.writeln(`Olá, ${nome}. Seu nome tem ${nome.length} letras. </br>`)
+        document.writeln(`E seu nome em Letra MAIUSCULA fica assim ${nome.toUpperCase()}. </br>`)
+        document.writeln(`E seu nome em Letra minúscula fica assim ${nome.toLowerCase()}. </br>`)
+        var sal = Number.parseFloat(window.prompt('Qual o seu salário? ')).toFixed(2).replace('.',',')
+        document.writeln(`Seu salário é: R$ ${sal}`)
+        var dia = Number.parseFloat(sal / 30)
+        document.writeln(`Seu valor por dia é: R$ ${dia}`)
+    </script>
+</body>
+</html>
